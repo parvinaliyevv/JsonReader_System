@@ -1,0 +1,120 @@
+﻿<Window x:Class="JsonReader.Views.MainView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        ResizeMode="NoResize" WindowStyle="None" AllowsTransparency="True" Background="Transparent"
+        FontFamily="Calibri" FontSize="18" Foreground="GhostWhite" Height="400" Width="700" mc:Ignorable="d">
+
+    <Border Background="#28282e" CornerRadius="7">
+
+        <Grid>
+
+            <Grid.RowDefinitions>
+                <RowDefinition MaxHeight="50"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <Border Background="#232123" CornerRadius="7, 7, 0, 0" MouseDown="DragWindow_MouseDown">
+                <DockPanel LastChildFill="False">
+
+                    <Button Style="{StaticResource MaterialDesignFloatingActionMiniDarkButton}" Content="{materialDesign:PackIcon Kind=Close}" Foreground="#646365" Background="Transparent" BorderBrush="Transparent" Height="40" Width="40" Margin="0, 0, 10, 0" Click="AppClose_ButtonClicked" DockPanel.Dock="Right"/>
+
+                    <TextBlock VerticalAlignment="Center" FontSize="30" Margin="20, 0, 0, 0">
+                    
+                        <Run Text="●" Foreground="#ee6a5f"/>
+                        <Run Text="●" Foreground="#f5be51"/>
+                        <Run Text="●" Foreground="#63c757"/>
+
+                    </TextBlock>
+
+                </DockPanel>
+            </Border>
+
+            <Grid Grid.Row="1">
+
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition Height="60"/>
+                </Grid.RowDefinitions>
+
+                <ListBox ItemsSource="{Binding Cars}" Margin="20, 30">
+
+                    <ListBox.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <VirtualizingStackPanel Orientation="Vertical"/>
+                        </ItemsPanelTemplate>
+                    </ListBox.ItemsPanel>
+
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <Grid>
+
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="3*"/>
+                                </Grid.ColumnDefinitions>
+
+                                <Image Source="{Binding ImagePath}" Margin="5"/>
+
+                                <UniformGrid Rows="3" VerticalAlignment="Center" Margin="10" Grid.Column="1">
+
+                                    <StackPanel Orientation="Horizontal" Grid.Row="0">
+
+                                        <TextBlock Text="Model: "/>
+                                        <TextBlock Text="{Binding Model}"/>
+
+                                    </StackPanel>
+
+                                    <StackPanel Orientation="Horizontal" Grid.Row="1">
+
+                                        <TextBlock Text="Vendor: "/>
+                                        <TextBlock Text="{Binding Vendor}"/>
+
+                                    </StackPanel>
+
+                                    <StackPanel Orientation="Horizontal" Grid.Row="2">
+
+                                        <TextBlock Text="Year: "/>
+                                        <TextBlock Text="{Binding Year}"/>
+
+                                    </StackPanel>
+
+                                </UniformGrid>
+
+                            </Grid>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+
+                </ListBox>
+
+                <DockPanel LastChildFill="False" Grid.Row="1">
+
+                    <StackPanel VerticalAlignment="Center" Orientation="Horizontal" Margin="30, 0, 0, 0">
+
+                        <TextBlock Margin="7, 0" Text="Single"/>
+                        <ToggleButton Margin="5, 0" Background="#7D9D9C" IsChecked="{Binding IsMultiThreadOperation}"/>
+                        <TextBlock Margin="5, 0" Text="Multi"/>
+
+                    </StackPanel>
+
+                    <StackPanel VerticalAlignment="Center" Orientation="Horizontal" Margin="10, 0, 0, 0">
+
+                        <TextBlock Margin="20, 0, 5, 0" Text="Time: "/>
+                        <TextBlock Text="{Binding Time}"/>
+
+                    </StackPanel>
+
+                    <Button DockPanel.Dock="Right" Background="Transparent" BorderBrush="#7D9D9C" Margin="5" Command="{Binding CancelOperationCommand}" Content="Cancel"/>
+                    <Button DockPanel.Dock="Right" Background="Transparent" BorderBrush="#7D9D9C" Margin="5" Command="{Binding StartOperationCommand}" Content="Start"/>
+
+                </DockPanel>
+                
+            </Grid>
+
+        </Grid>
+
+    </Border>
+    
+</Window>
