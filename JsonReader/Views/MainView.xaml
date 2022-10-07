@@ -62,22 +62,22 @@
 
                                     <StackPanel Orientation="Horizontal" Grid.Row="0">
 
-                                        <TextBlock Text="Model: "/>
-                                        <TextBlock Text="{Binding Model}"/>
+                                        <TextBlock Foreground="GhostWhite" Text="Model: "/>
+                                        <TextBlock Foreground="GhostWhite" Text="{Binding Model}"/>
 
                                     </StackPanel>
 
                                     <StackPanel Orientation="Horizontal" Grid.Row="1">
 
-                                        <TextBlock Text="Vendor: "/>
-                                        <TextBlock Text="{Binding Vendor}"/>
+                                        <TextBlock Foreground="GhostWhite" Text="Vendor: "/>
+                                        <TextBlock Foreground="GhostWhite" Text="{Binding Vendor}"/>
 
                                     </StackPanel>
 
                                     <StackPanel Orientation="Horizontal" Grid.Row="2">
 
-                                        <TextBlock Text="Year: "/>
-                                        <TextBlock Text="{Binding Year}"/>
+                                        <TextBlock Foreground="GhostWhite" Text="Year: "/>
+                                        <TextBlock Foreground="GhostWhite" Text="{Binding Year}"/>
 
                                     </StackPanel>
 
