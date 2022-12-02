@@ -1,13 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "YCc7XXo7xvRbW2Tz32Xvs45z1Mlqs3W8xqUSEty75YrU1gT9ANENOULhg7BeZ1ZtwW4HVuxIafzGmztrfBgNvw==",
+  "dgSpecHash": "s8ylKWrybgJ1G799HYfpllBuYlyqndN8wKs1SQ6x5HHvaX6UY/6Hmkge/Bc58G2adp9hVu16OUPkCTWSn0XMdA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\HP\\source\\repos\\JsonReader\\JsonReader\\JsonReader.csproj",
+  "projectFilePath": "C:\\Users\\Aliy_ql08\\Desktop\\New folder\\JsonReader_SystemProgramming\\JsonReader\\JsonReader.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\HP\\.nuget\\packages\\bogus\\34.0.2\\bogus.34.0.2.nupkg.sha512",
-    "C:\\Users\\HP\\.nuget\\packages\\materialdesigncolors\\2.0.6\\materialdesigncolors.2.0.6.nupkg.sha512",
-    "C:\\Users\\HP\\.nuget\\packages\\materialdesignthemes\\4.5.0\\materialdesignthemes.4.5.0.nupkg.sha512",
-    "C:\\Users\\HP\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+    "C:\\Users\\Aliy_ql08\\.nuget\\packages\\bogus\\34.0.2\\bogus.34.0.2.nupkg.sha512",
+    "C:\\Users\\Aliy_ql08\\.nuget\\packages\\materialdesigncolors\\2.0.6\\materialdesigncolors.2.0.6.nupkg.sha512",
+    "C:\\Users\\Aliy_ql08\\.nuget\\packages\\materialdesignthemes\\4.5.0\\materialdesignthemes.4.5.0.nupkg.sha512",
+    "C:\\Users\\Aliy_ql08\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
   ],
   "logs": []
 }

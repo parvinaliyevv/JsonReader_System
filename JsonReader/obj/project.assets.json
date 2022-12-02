@@ -157,19 +157,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\HP\\.nuget\\packages\\": {}
+    "C:\\Users\\Aliy_ql08\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\HP\\source\\repos\\JsonReader\\JsonReader\\JsonReader.csproj",
+      "projectUniqueName": "C:\\Users\\Aliy_ql08\\Desktop\\New folder\\JsonReader_SystemProgramming\\JsonReader\\JsonReader.csproj",
       "projectName": "JsonReader",
-      "projectPath": "C:\\Users\\HP\\source\\repos\\JsonReader\\JsonReader\\JsonReader.csproj",
-      "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\HP\\source\\repos\\JsonReader\\JsonReader\\obj\\",
+      "projectPath": "C:\\Users\\Aliy_ql08\\Desktop\\New folder\\JsonReader_SystemProgramming\\JsonReader\\JsonReader.csproj",
+      "packagesPath": "C:\\Users\\Aliy_ql08\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Aliy_ql08\\Desktop\\New folder\\JsonReader_SystemProgramming\\JsonReader\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Aliy_ql08\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -226,7 +231,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }
